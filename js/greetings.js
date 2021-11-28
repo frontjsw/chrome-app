@@ -14,7 +14,6 @@ function onLoginSubmit(event){
     paintGreeting(); 
 }
 
-
 function paintGreeting () {
     const username = localStorage.getItem(USERNAME_KEY);
     greeting.innerText = `Hello ${username}`
@@ -29,5 +28,3 @@ if (savedUserName === null){
 } else {
     paintGreeting(); 
 }
-
-
