@@ -1,3 +1,127 @@
 .hidden {
   display: none;
 }
+
+* {
+  padding: 0;
+  margin: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+.main_area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main_area #clock {
+  font-size: 1050%;
+  color: #fff;
+  cursor: default;
+  width: 100%;
+}
+.main_area #login_form {
+  width: 100%;
+}
+.main_area #login_form .login_name {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main_area #login_form input {
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+}
+.main_area #login_form input::placeholder {
+  color: #fff;
+}
+.main_area #greeting {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+}
+.todo {
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  width: 300px;
+  height: 350px;
+}
+.todo h1 {
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+}
+.todo form input {
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border-bottom: 3px solid #fff;
+  margin-top: 15px;
+}
+.todo form input::placeholder {
+  color: #fff;
+}
+.todo #todo_list {
+  list-style: none;
+}
+.todo #todo_list li {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.todo #todo_list button {
+  background: none;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 9px;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+#weather {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#quote {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+#quote span {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #fff;
+}
+
+img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

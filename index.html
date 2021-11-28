@@ -9,16 +9,23 @@
 
 </head>
 <body>
-    <h2 id="clock">00:00</h2>
-    <form id="login_form" class="hidden">
-        <input required maxlength="15" type="text" placeholder="What is your name?">
-        <input type= "submit" value="Log in">
-    </form>
-    <h1 id="greeting" class="hidden"></h1>    
-    <form id="todo_form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo_list"></ul>
+    <div class="main_area">
+        <h2 id="clock">00:00</h2>
+        <form id="login_form" class="hidden">
+            <div class="login_name">What is your name?</div>
+            <input required maxlength="15" type="text" >
+            <!-- <input type= "submit" value="Log in"> -->
+        </form>
+        <h1 id="greeting" class="hidden"></h1>    
+    </div>
+    <div class="todo">
+        <h1>ToDo List</h1>
+        <form id="todo_form">
+            <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+
+        <ul id="todo_list"></ul>
+    </div>
     <div id="quote">
         <span></span>
         <span></span>
